@@ -24,7 +24,7 @@ The workflow integrates multiple components to ensure smooth data processing:
 - **Databricks** – Facilitates data transformation and analytics  
 - **Visualization Tools** – Data insights are derived using **Tableau, Power BI, and Looker Studio**  
 
-![System Architecture](assets/architecture-diagram.png)
+![System Architecture](assets/system_architecture.png)
 
 ---
 
