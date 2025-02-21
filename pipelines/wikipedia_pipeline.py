@@ -137,7 +137,7 @@ def write_wikipedia_data(**kwargs):
                  + "_" + str(datetime.now().time()).replace(":", "_") + '.csv')
 
     #data.to_csv('data/' + file_name, index=False)
-    data.to_csv('abfs://footballdataanalytics@footballdataanalytics.dfs.core.windows.net/data/' + file_name,
+    data.to_csv('yourabfsurl' + file_name,
                 storage_options={
-                    'account_key': 'FmXkvU5w4gcDPk6d1YQMHyr4ytJ4OEZieoaTq/sfW+WxmMhRnuROXfcXCRXkdBWY6ti7PT7szmNk+AStzqW14Q=='
+                    'account_key': 'Youraccountkey'
                 }, index=False)
