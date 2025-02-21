@@ -1,5 +1,4 @@
 import json
-
 import pandas as pd
 from geopy import Nominatim
 import geocoder
@@ -137,8 +136,8 @@ def write_wikipedia_data(**kwargs):
     file_name = ('stadium_cleaned_' + str(datetime.now().date())
                  + "_" + str(datetime.now().time()).replace(":", "_") + '.csv')
 
-    data.to_csv('data/' + file_name, index=False)
-    # data.to_csv('abfs://footballdataeng@footballdataeng.dfs.core.windows.net/data/' + file_name,
-    #             storage_options={
-    #                 'account_key': 'pcrbWAsuPmzOH43lu1xang05pIs+g1Lys/bor0z59O38sVyWQNQ64AtEveMobZ2pIwCjqximReKY+ASt9dP/+A=='
-    #             }, index=False)
+    #data.to_csv('data/' + file_name, index=False)
+    data.to_csv('abfs://footballdataanalytics@footballdataanalytics.dfs.core.windows.net/data/' + file_name,
+                storage_options={
+                    'account_key': 'FmXkvU5w4gcDPk6d1YQMHyr4ytJ4OEZieoaTq/sfW+WxmMhRnuROXfcXCRXkdBWY6ti7PT7szmNk+AStzqW14Q=='
+                }, index=False)
